@@ -1,18 +1,25 @@
 What happens when you initialize a repository? Why do you need to do it?
+-->a .git hidden file is added and we can perform git operations afterwards.
 
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
+-->staging area is a block that holds files to be commited temporalily while repo is the whole block that contains all the files wheter to be commited or not.
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+-->By adding a single file to staging area and then commiting it
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+-->when u r working in different versions of a project. U can checkout to any of of the braches for different versions
 
 How do the diagrams help you visualize the branch structure?
+-->It lets u konw if a certain commit is left out or not
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+-->Merging add all the common lines of the two files into the new merged file. Uncommon lines are merged if the line is not present in the common-parent file of the two files otherwise it is not merged.  
 
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+--> Sometimes two files may have a diiferent implementation of the same funtion in the common ancestor. So automatically merging them is sure to result into a conflict. This is resolved by manual merging where the user can choose which version of the function out of the three functions to choose and wheter to introduce modification in the choosed funtion or not.
